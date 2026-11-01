@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Meta-analysis of nitrogen inhibitors: N2O emissions vs crop yield"
+authors:
+  - family-names: Rabbani
+    given-names: Mohammad
+version: 1.0.0
+date-released: 2026-11-01
+license: MIT
+repository-code: "https://github.com/Rabbani-bot/meta-analysis-nitrogen-inhibitors"
+keywords: [meta-analysis, metawin, metafor, random-effects, publication-bias, meta-regression, nitrous-oxide, agriculture, python, statistics]

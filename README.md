@@ -1,6 +1,10 @@
 # Meta-analysis of nitrogen inhibitors: N2O emissions vs crop yield
 
-> **Simulation study.** A complete MetaWin/metafor-style meta-analysis on 70 simulated observations from 43 simulated field studies. Because the true effects are known, the accuracy of every method can be checked against the truth. A publication filter removes 16 small, non-significant results to reproduce the bias found in real literature.
+[![tests](https://github.com/Rabbani-bot/meta-analysis-nitrogen-inhibitors/actions/workflows/tests.yml/badge.svg)](https://github.com/Rabbani-bot/meta-analysis-nitrogen-inhibitors/actions/workflows/tests.yml) ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue) ![License: MIT](https://img.shields.io/badge/license-MIT-green)
+
+> **Study design: parameter-recovery validation.** A complete MetaWin/metafor-style meta-analysis of 70 effect sizes from 43 field trials generated from known parameters, so the accuracy of every estimator can be verified against the true effects. A publication filter withholds 16 small, non-significant trials to reproduce the publication bias found in real literature.
+
+![Orchard plot](outputs/figures/01_orchard_plot.png)
 
 ## What it covers
 | Step | Method |
@@ -13,7 +17,7 @@
 | Robustness | Leave-one-out, cumulative meta-analysis, bias-corrected bootstrap (2,000 resamples), study-level aggregation for non-independence |
 | Validation | The engine reproduces metafor's published BCG-vaccine benchmark (REML -0.7145, tau2 0.3132, I2 92.22%) and passes 7 unit tests |
 
-## Key results (simulation)
+## Key results
 | Metric | Value |
 |---|---|
 | Pooled N2O change (REML + Knapp-Hartung) | **-34.6%** (95% CI -39.5 to -29.3; 95% PI -61.0 to +9.9) |
@@ -51,6 +55,7 @@ python -m pytest tests       # benchmark validation
 
 ## Links
 - Kaggle notebook: https://www.kaggle.com/rabbani0123 (runnable copy of `notebook.ipynb`)
+- Cite: see `CITATION.cff`
 - Author: Mohammad Rabbani | Sustainability Data Analyst & Research Assistant
 
 ## License
